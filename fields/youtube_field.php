@@ -68,7 +68,7 @@ class YouTube_Field extends acf_Field
         return strtr(self::$template, array(
             '%width%' => $field['width'],
             '%height%' => $field['height'],
-            '%video_id%' => $parent::get_value($post_id, $field),
+            '%video_id%' => parent::get_value($post_id, $field),
         ));
     } 
 
