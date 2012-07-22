@@ -1,0 +1,42 @@
+Searching 849 files for "jquery-ui-dialog"
+
+/home/alxarch/projects/thinking.gr/travlos/wp-content/plugins/acf-extras/fields/youtube_field.php:
+   56      function admin_print_styles()
+   57      {
+   58:         wp_enqueue_style('jquery-ui-dialog');
+   59      }
+   60  
+   ..
+   63          wp_enqueue_script('jquery');
+   64          wp_enqueue_script('jquery-ui-core');
+   65: 		wp_enqueue_script('wp-jquery-ui-dialog');
+   66  		wp_enqueue_script('acf-youtube', plugins_url('js/acf-youtube.js', dirname(__FILE__)));
+   67  	}
+
+/home/alxarch/projects/thinking.gr/travlos/wp-includes/class-wp-editor.php:
+  457  			wp_enqueue_script('wplink');
+  458  			wp_enqueue_script('wpdialogs-popup');
+  459: 			wp_enqueue_style('wp-jquery-ui-dialog');
+  460  		}
+  461  
+
+/home/alxarch/projects/thinking.gr/travlos/wp-includes/script-loader.php:
+  144  	$scripts->add( 'jquery-ui-button', '/wp-includes/js/jquery/ui/jquery.ui.button.min.js', array('jquery-ui-core', 'jquery-ui-widget'), '1.8.20', 1 );
+  145  	$scripts->add( 'jquery-ui-datepicker', '/wp-includes/js/jquery/ui/jquery.ui.datepicker.min.js', array('jquery-ui-core'), '1.8.20', 1 );
+  146: 	$scripts->add( 'jquery-ui-dialog', '/wp-includes/js/jquery/ui/jquery.ui.dialog.min.js', array('jquery-ui-resizable', 'jquery-ui-draggable', 'jquery-ui-button', 'jquery-ui-position'), '1.8.20', 1 );
+  147  	$scripts->add( 'jquery-ui-draggable', '/wp-includes/js/jquery/ui/jquery.ui.draggable.min.js', array('jquery-ui-core', 'jquery-ui-mouse'), '1.8.20', 1 );
+  148  	$scripts->add( 'jquery-ui-droppable', '/wp-includes/js/jquery/ui/jquery.ui.droppable.min.js', array('jquery-ui-draggable'), '1.8.20', 1 );
+  ...
+  281  	) );
+  282  
+  283: 	$scripts->add( 'wpdialogs', "/wp-includes/js/tinymce/plugins/wpdialogs/js/wpdialog$suffix.js", array( 'jquery-ui-dialog' ), false, 1 );
+  284  
+  285  	$scripts->add( 'wpdialogs-popup', "/wp-includes/js/tinymce/plugins/wpdialogs/js/popup$suffix.js", array( 'wpdialogs' ), false, 1 );
+  ...
+  483  	$styles->add( 'imgareaselect', '/wp-includes/js/imgareaselect/imgareaselect.css', array(), '0.9.8' );
+  484  	$styles->add( 'admin-bar', "/wp-includes/css/admin-bar$suffix.css" );
+  485: 	$styles->add( 'wp-jquery-ui-dialog', "/wp-includes/css/jquery-ui-dialog$suffix.css" );
+  486  	$styles->add( 'editor-buttons', "/wp-includes/css/editor$suffix.css" );
+  487  	$styles->add( 'wp-pointer', "/wp-includes/css/wp-pointer$suffix.css" );
+
+7 matches across 3 files

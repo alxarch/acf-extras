@@ -152,13 +152,13 @@ HTML;
   function admin_print_scripts()
   {
     wp_enqueue_script('jquery');
-    wp_enqueue_script('acf-name', plugins_url('js/acf-name.js', __FILE__));
+    wp_enqueue_script('acf-name', plugins_url('js/acf-name.js', dirname(__FILE__)));
    
   }
 
   function admin_print_styles()
   {
-      wp_enqueue_style('acf-name', plugins_url('css/acf-name.css', __FILE__));
+      wp_enqueue_style('acf-name', plugins_url('css/acf-name.css', dirname(__FILE__)));
   }
 
   function get_value_for_api($post_id, $field){
